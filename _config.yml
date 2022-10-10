@@ -3,42 +3,46 @@
 
 title: YZ
 description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
-baseurl: "/" # the subpath of the site
-url: "https://yz4work.github.io" # the base hostname & protocol for the site
-og_image: /assets/img/profile-pic.jpg
+  主页
+baseurl: "" # the subpath of the site
+url: "https://yz14.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/yz2.jpg
 google_analytics: "UA-121636368-3"
 
 header:
   pages:
-    - name: Home
-      slug: /
-    - name: Work
-    - name: Blog
+    - name: 心理学
+      slug: /main/docs/psy
+    - name: 机器学习
+      slug: /main/docs/ml
+    - name: 深度学习
+      slug: /main/docs/dl
+    - name: 随笔
+      slug: /main/docs/zw
 
 footer:
   show_powered_by: true
-  联系:
+  contact:
     - name: Email
-      value: 1163660010 AT qq.com
-      link: 1163660010@qq.com
+      value: 发送邮件
+      link: mailto:1163660010@qq.com
     - name: WeChat
-      value: 1163660010
+      value: 二维码
       link: "#"
-  follow:
-    # - name: Twitter
-    #   link: http://twitter.com/YourTwitterUsername
-    #   username: "@YourTwitterUsername"
-    # - name: Facebook
-    #   link: http://facebook.com/YourFacebookUsername
-    # - name: LinkedIn
-    #   link: http://linkedin.com/in/YourLinkedInUsername
-    - name: GitHub
-      link: https://github.com/yz4work
-    # - name: Dribbble
-    #   link: https://dribbble.com/YourDribbbleUsername
-    # - name: RSS
-    #   link: /feed.xml
+#   follow:
+#     - name: Twitter
+#       link: http://twitter.com/YourTwitterUsername
+#       username: "@YourTwitterUsername"
+#     - name: Facebook
+#       link: http://facebook.com/YourFacebookUsername
+#     - name: LinkedIn
+#       link: http://linkedin.com/in/YourLinkedInUsername
+#     - name: GitHub
+#       link: http://yz14.github.io
+#     - name: Dribbble
+#       link: https://dribbble.com/YourDribbbleUsername
+#     - name: RSS
+#       link: /feed.xml
 
 # Build settings
 markdown: kramdown
