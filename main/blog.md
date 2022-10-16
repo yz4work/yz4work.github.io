@@ -1,8 +1,7 @@
 ---
 layout: blog
-title: Blog
-slug: /blog
+title: 风格迁移
+slug: /main/blog
 ---
 
-This is an example of a "Blog" page, displaying a list of posts.
-<br />
+[综述](https://arxiv.org/pdf/1705.04058.pdf%20http://arxiv.org/abs/1705.04058.pdf)
