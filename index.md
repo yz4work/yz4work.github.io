@@ -9,7 +9,7 @@ profile_picture:
 
 ---  
 
-[风格迁移（style transfer）](https://yz4work.github.io/../../main/blog.md)    
-偏微分方程求解（PDE）  
-蛋白质结构预测  
+[风格迁移（style transfer）](https://yz4work.github.io/main/style_transfer)    
+[偏微分方程求解（PDE）](https://yz4work.github.io/main/pde)  
+[蛋白质结构预测](https://yz4work.github.io/main/protein)  
 
