@@ -1,7 +1,7 @@
 ---
 layout: work
-title: Work
-slug: /work
+title: 偏微分方程求解（PDE）
+slug: /pde
 items:
   - title: My Interest 1
     image:
