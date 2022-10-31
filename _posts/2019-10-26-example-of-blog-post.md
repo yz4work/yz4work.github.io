@@ -10,11 +10,9 @@ og_image: /assets/img/content/post-example/Banner.jpg
 
 &emsp;&emsp;Hello, 这是我的第一篇博客。我不知道该写些什么，干脆就放一些音乐和照片吧[^1]。
 
-<br />
 
-
-#### Table of Contents
-- [Table of Contents](#table-of-contents)
+#### 目录
+- [目录](#目录)
 - [PART 1](#part-1)
 - [PART 2](#part-2)
   - [PART 2 SUB PART 1](#part-2-sub-part-1)
