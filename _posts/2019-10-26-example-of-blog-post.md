@@ -13,14 +13,15 @@ og_image: /assets/img/content/post-example/Banner.jpg
 
 #### 目录
 - [目录](#目录)
-- [第一章](#第一章)
+- [莫奈](#莫奈)
 - [第二章](#第二章)
   - [2.1节](#21节)
   - [2.2节](#22节)
   - [脚注](#脚注)
 
-#### 第一章
-莫奈
+#### 莫奈
+莫奈所有的艺术作品参见[1](https://commons.wikimedia.org/wiki/Claude_Monet)、[2](https://www.wikiart.org/en/claude-monet)  
+
 [1](https://upload.wikimedia.org/wikipedia/commons/7/73/Claude_Monet_-_L%27%C3%A9t%C3%A9_-_Champ_de_coquelicots.JPG)
 
 
