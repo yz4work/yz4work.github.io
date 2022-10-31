@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  "Hello world"
-date:   2019-10-26 10:00:40
+date:   2022-10-31 21:22:40
 blurb: "A look at an example post using Bay Jekyll theme."
 ---
 
 <!-- <img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic"/> -->
-
-og_image: /assets/img/content/post-example/Banner.jpg
 
 &emsp;&emsp;Hello, 这是我的第一篇博客。我不知道该写些什么，干脆就放一些音乐和照片吧[^1]。
 
