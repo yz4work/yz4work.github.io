@@ -22,4 +22,4 @@ slug: /paper
 
 3. Squeeze-and-Excitation Networks. [pdf](https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Squeeze-and-Excitation_Networks_CVPR_2018_paper.pdf)  
 学习不同通道之间的关系，也可以理解为对通道的注意力。对某一输出的每个通道，先计算一个数值作为对应通道的一个
-表示，再利用神经网络（MLP）进一步学习到对应每个通道的权重。
+表示，再利用神经网络（MLP）进一步学习到对应通道的权重。
