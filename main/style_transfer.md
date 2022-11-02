@@ -14,4 +14,7 @@ slug: /main/blog
 
 4. Unpaired Image-to-Image Translation
 using Cycle-Consistent Adversarial Networks. [原文](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.pdf)  
-经典的CycleGAN。就如题目所说，它是一个循环的结构，或者就像文中提到的可以理解为自编码器。对于输入图片x，文中先用模型G将其转换成具有某种风格的图片y（可以将y理解为自编码器的隐空间），再利用模型F将y还原成原图x。因此，对于模型G和F都可以引入对抗损失（实际中，对抗损失可以选表现较好的一种）。与此同时，模型G和F生成图片后可以基于像素点引入损失（文中称为cycle consistency loss）。以上的过程在文中的图3描述的非常清晰。$y = G(x), x = F(y)$
+经典的CycleGAN。就如题目所说，它是一个循环的结构，或者就像文中提到的可以理解为自编码器。对于输入图片x，文中先用模型G将其转换成具有某种风格的图片y（可以将y理解为自编码器的隐空间），再利用模型F将y还原成原图x。因此，对于模型G和F都可以引入对抗损失（实际中，对抗损失可以选表现较好的一种）。与此同时，模型G和F生成图片后可以基于像素点引入损失（文中称为cycle consistency loss）。以上的过程在文中的图3描述的非常清晰。  
+
+5. Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization. [原文](https://openaccess.thecvf.com/content_ICCV_2017/papers/Huang_Arbitrary_Style_Transfer_ICCV_2017_paper.pdf)  
+该文想把一张照片转换成具有任意风格的照片。同样，因为上文2每次转换时必须要重新训练模型，所以该文想训练好一个生成模型，给定照片和参考的风格，该生成模型可以直接输出转换结果。文中图2描述了主要框架，对于输入的照片c和风格s，文中先用VGG网络对它们分别提取特征，然后根据文中提出的方法AdaIN计算出一个特征表示t，并利用基于该特征表示t去生成所想要的转换风格后的照片g(t)，最后文中利用VGG网络去分别评判该生成的照片g(t)与照片c和风格s的差异。
