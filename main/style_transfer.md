@@ -14,4 +14,4 @@ slug: /main/blog
 
 4. Unpaired Image-to-Image Translation
 using Cycle-Consistent Adversarial Networks. [原文](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.pdf)  
-经典的CycleGAN。就如题目所说，它是一个循环的结构，或者就像文中提到的可以理解为自编码器。对于输入图片x，文中先用模型G将其转换成具有某种风格的图片y（可以将y理解为自编码器的隐空间），再利用模型F将y还原成原图x。因此，对于模型G和F都可以引入对抗损失（实际中，对抗损失可以选表现较好的一种）。与此同时，模型G和F生成图片后可以基于像素点引入损失（文中称为cycle consistency loss）。以上的过程在文中的图3描述的非常清晰。
+经典的CycleGAN。就如题目所说，它是一个循环的结构，或者就像文中提到的可以理解为自编码器。对于输入图片x，文中先用模型G将其转换成具有某种风格的图片y（可以将y理解为自编码器的隐空间），再利用模型F将y还原成原图x。因此，对于模型G和F都可以引入对抗损失（实际中，对抗损失可以选表现较好的一种）。与此同时，模型G和F生成图片后可以基于像素点引入损失（文中称为cycle consistency loss）。以上的过程在文中的图3描述的非常清晰。$y = G(x), x = F(y)$
