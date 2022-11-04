@@ -34,3 +34,8 @@ using Cycle-Consistent Adversarial Networks. [原文](https://openaccess.thecvf.
 10. Stable and Controllable Neural Texture Synthesis and Style Transfer Using Histogram Losses[原文](https://arxiv.org/pdf/1701.08893.pdf)  
 在上文2的基础上加入了直方图loss。文章有分析为什么上文2会有一些不好的结果，待细看。
 
+11. A Style-Aware Content Loss for Real-time HD Style Transfer [原文](#)  
+方法见文中图3.作者想迁移一种风格，而不是某张照片的风格，所以作者用到了GAN和一批艺术画（而不是单张）。对于输入的一张照片，先用编码器得到特征，再将该特征解码成风格照片，而解码出来效果是否真实就用辨别器和真实的风格做对比。为了保持解码出来的内容，把解码出来的风格照片再放回编码器，得到风格照片的特征，将其与原先照片的特征做对比。同时，还将原先照片和风格照片通过卷积网络进行变换后再对比。  
+
+12. Artistic Style Transfer with Internal-external Learning and Contrastive Learning. [原文](#)  
+发展太快了，连对比学习都用上了。方法见文中图2.作者也是通过编码解码再加上GAN网络来生成风格照片的。也是先通过解码器解码风格图片，并对比风格图片和内容以及风格中间的相似度（VGG的中间层信息），然后用辨别器区别是不是具有某种风格。除此之外，作者还加入了对比损失，不同的照片迁移了相同的风格，那么它们的风格就是相似的，但是它们的内容是不相似的，与此同时，相同的照片迁移了不同的风格，它们的内容是相似的而风格是不相似的。
