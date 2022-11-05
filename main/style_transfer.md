@@ -38,4 +38,14 @@ using Cycle-Consistent Adversarial Networks. [原文](https://openaccess.thecvf.
 方法见文中图3.作者想迁移一种风格，而不是某张照片的风格，所以作者用到了GAN和一批艺术画（而不是单张）。对于输入的一张照片，先用编码器得到特征，再将该特征解码成风格照片，而解码出来效果是否真实就用辨别器和真实的风格做对比。为了保持解码出来的内容，把解码出来的风格照片再放回编码器，得到风格照片的特征，将其与原先照片的特征做对比。同时，还将原先照片和风格照片通过卷积网络进行变换后再对比。  
 
 12. Artistic Style Transfer with Internal-external Learning and Contrastive Learning. [原文](#)  
-发展太快了，连对比学习都用上了。方法见文中图2.作者也是通过编码解码再加上GAN网络来生成风格照片的。也是先通过解码器解码风格图片，并对比风格图片和内容以及风格中间的相似度（VGG的中间层信息），然后用辨别器区别是不是具有某种风格。除此之外，作者还加入了对比损失，不同的照片迁移了相同的风格，那么它们的风格就是相似的，但是它们的内容是不相似的，与此同时，相同的照片迁移了不同的风格，它们的内容是相似的而风格是不相似的。
+发展太快了，连对比学习都用上了。方法见文中图2.作者也是通过编码解码再加上GAN网络来生成风格照片的。也是先通过解码器解码风格图片，并对比风格图片和内容以及风格中间的相似度（VGG的中间层信息），然后用辨别器区别是不是具有某种风格。除此之外，作者还加入了对比损失，不同的照片迁移了相同的风格，那么它们的风格就是相似的，但是它们的内容是不相似的，与此同时，相同的照片迁移了不同的风格，它们的内容是相似的而风格是不相似的。  
+
+13. Arbitrary Style Transfer with Style-Attentional Networks. [原文](https://openaccess.thecvf.com/content_CVPR_2019/papers/Park_Arbitrary_Style_Transfer_With_Style-Attentional_Networks_CVPR_2019_paper.pdf)  
+只要看到任意风格转换的标题，都会立刻想作者是这怎么把内容和风格糅合到一起的。作者通过加入注意力机制，将风格和内容的特征合并到一起。文章的框架是编码和解码，把内容和风格先编码，再通过注意力机制合并到一起，然后解码出风格照片。作者加入了内容（对比隐藏层特征相似度）、风格（对比隐藏层特征的均值和方差相似度）损失。除此之外，作者认为内容和内容解码出来应该是内容，风格和风格解码出来也是风格，所以加了这一个损失函数。  
+
+14. Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration. [原文](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sheng_Avatar-Net_Multi-Scale_Zero-Shot_CVPR_2018_paper.pdf)  
+可以理解为作者结合了AdaIN和StyleSwap的方式。作者先通过编码器提取内容和风格的特征，然后以类似AdaIN的方式对这些特征进行归一化，接着在特征层面上进行Swap（StyleSwap是在原始输出层面上），就是将风格特征切分成小块当作不同的卷积核对内容特征进行卷积，最后对卷积的结果进行解码，输出想要的风格照片。  
+
+15. Content and Style Disentanglement for Artistic Style Transfer. [原文](#)  
+这篇论文的结果我也觉得挺满意的。作者的框架就是编码器提取特征，解码器生成风格图片，辨别器区别风格的真伪。除了风格损失、内容损失和GAN损失以外，作者还提出了两个损失，一是不同风格渲染的同一张图片它们在风格上应该存在差异，二是用相同风格渲染的不同内容它们在风格上应该相似。  
+
